@@ -1,0 +1,65 @@
+.transactionForm {
+	display: grid;
+	gap: 0.2rem;
+
+	padding: 0.5rem 1.5rem 0.9rem 1.5rem;
+}
+
+.input {
+	padding: 0.3rem 0.8rem 0.1rem;
+	font-size: 0.95rem;
+	margin-bottom: 0.5rem;
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	background-color: #e5e5e5;
+	border-radius: 1rem;
+}
+
+.inputHigher {
+	min-height: 2rem;
+}
+
+.label {
+	padding-bottom: 0.2rem;
+	padding-left: 0.7rem;
+}
+
+.button {
+	border: 0;
+	background-color: transparent;
+	color: black;
+	border: 1px solid black;
+	border-radius: 1rem;
+	margin: 0 auto;
+	padding: 0.6rem 2rem;
+	font-size: 1rem;
+	cursor: pointer;
+
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}
+
+.message {
+	padding: 0.5rem 1rem;
+	border: 1px solid;
+	margin: 1.25rem 0.25rem;
+	display: none;
+	font-size: 0.95rem;
+}
+
+.error {
+	display: block;
+	color: red;
+}
+
+.success {
+	display: block;
+	color: darkgreen;
+}
+
+.inputError {
+	border-color: red;
+}

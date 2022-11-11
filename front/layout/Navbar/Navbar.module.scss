@@ -1,0 +1,10 @@
+@import "front/common/styles/variables";
+
+.navbar {
+	display: block;
+
+	width: 100%;
+	padding: 0.7rem 1rem 0.9rem;
+	text-align: center;
+	background-color: $navbar-background-color;
+}

@@ -1,0 +1,12 @@
+@import "front/common/styles/variables";
+
+.footer {
+	display: block;
+
+	width: 100%;
+	padding: .7rem 1rem .9rem;
+	text-align: center;
+	background-color: $footer-background-color;
+
+	margin-top: 15rem;
+}

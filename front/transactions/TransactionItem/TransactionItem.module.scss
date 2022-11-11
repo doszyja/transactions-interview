@@ -1,0 +1,142 @@
+@import "front/common/styles/variables";
+
+.transactionItem {
+	padding: 0.5rem;
+	background: #fff;
+	border-bottom: 2px solid #c9caca;
+	margin-bottom: 0.35rem;
+	position: relative;
+
+	display: grid;
+
+	-webkit-animation: fade 1.5s;
+	animation: fade 1.5s;
+	opacity: 1;
+	transition: height ease-in-out 0.1s;
+
+	&:hover {
+		.removeLabel {
+			display: block;
+		}
+	}
+}
+
+.transactionRemoveAnimation {
+	-webkit-animation: fadeOut 1s;
+	animation: fadeOut 1s;
+	opacity: 0;
+	overflow: hidden;
+	position: relative;
+	bottom: -4rem;
+	height: 0;
+}
+
+.removeLabel {
+	color: black;
+	border: 1px solid black;
+	border-radius: .8rem;
+	margin: 0 auto;
+
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+	position: absolute;
+	font-weight: 400;
+	line-height: 1;
+	font-size: 1rem;
+
+	cursor: pointer;
+
+	padding: 0.35rem 0.65rem;
+	top: 0.5rem;
+	right: 0.5rem;
+
+	@media screen and (min-width: $desktop-breakpoint) {
+		display: none;
+	}
+}
+
+.account {
+	color: $faded;
+	font-weight: 400;
+	padding-top: 0.15rem;
+}
+
+.row {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr;
+	padding: 0.4rem 0;
+	gap: 0 1rem;
+
+	@media screen and (min-width: $tablet-breakpoint) {
+		grid-template-columns: 1fr minmax(7rem, max-content);
+		padding: 0.4rem 1rem;
+	}
+}
+
+.date {
+	font-size: 0.9rem;
+}
+
+.amount {
+	font-size: $font-medium;
+	text-align: right;
+
+	@media screen and (min-width: $tablet-breakpoint) {
+		font-size: $font-large;
+	}
+}
+
+.beneficiary {
+	font-size: 1.15rem;
+	font-weight: 500;
+}
+
+.label {
+	display: inline-block;
+	font-size: 0.95rem;
+	width: 100%;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeOut {
+	from {
+		opacity: 1;
+		bottom: 0;
+	}
+	to {
+		opacity: 0;
+		bottom: -4rem;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+		bottom: 0;
+		height: 9rem;
+	}
+	to {
+		opacity: 0;
+		bottom: -4rem;
+		height: 0;
+	}
+}
