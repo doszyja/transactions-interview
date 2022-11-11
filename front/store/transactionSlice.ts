@@ -106,7 +106,7 @@ export const transactionSlice = createSlice({
 		},
 
 		addTransaction: (state, action: PayloadAction<Transaction>) => {
-			state.responseData = [...state.responseData, action.payload];
+			state.responseData = [action.payload, ...state.responseData];
 		},
 
 		addRemovedTransaction: (state, action: PayloadAction<TransactionId>) => {

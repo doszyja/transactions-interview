@@ -19,7 +19,11 @@ export default function handler(
 
 	const pageNumber = Number(page);
 
-	const transactions = dbDataJson.transactions;
+	const transactions = dbDataJson.transactions.sort((a, b) => {
+		const aDate = new Date(b.date);
+		const bDate = new Date(a.date);
+		return aDate.getTime() - bDate.getTime();
+	});
 	const maxPage = Math.ceil(transactions.length / 20);
 
 	if (pageNumber > maxPage) {
