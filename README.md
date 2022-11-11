@@ -1,4 +1,20 @@
+
 ## Introduction
+
+Acordingly to requirements application uses React and Typescript. Additionaly Nextjs added.
+Not much time to do everything as tidy as want (1 day). However all excercise steps complete.
+
+// Dominik Szyja
+## App description
+
+To run application, run following commands in task directory:
+
+    yarn
+	yarn dev
+
+Server will be available on http://localhost:3000.
+
+## Excercise description
 
 Application should contain list of bank transactions, based on design structure from _design.png_ file and contain following functionalities:
 
@@ -16,26 +32,3 @@ Application should contain list of bank transactions, based on design structure 
 7.  Balance should be calculated based on already filtered transactions.
 
 NOTE: Points 2-6 can be done on front-end side only.
-
-## API description
-
-To run API, run following commands in task directory:
-
-    npm install
-    npm run server
-
-Server will be available on http://localhost:3000.
-
-Available endpoints:
-
-> GET /transactions
-
-## Technologies
-
-Required technologies for development are _React_ and _Typescript_. Preffered CSS Modules.
-
-## Summary
-
-Send us back your app with instruction how to run app and tests. Preferred way is to get URL to codesandbox or your public repository with project. In case of problems/questions feel free to ask.
-
-**Good luck!**
