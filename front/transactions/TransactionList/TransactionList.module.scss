@@ -1,13 +1,19 @@
-.transactionList {
-	grid-column: span 2;
+@import "front/common/styles/variables";
 
+.transactionList {
 	display: flex;
 	flex-direction: column;
 
-    padding: 1.5rem 0;
+	padding: 1.5rem 0;
 	overflow: hidden;
 
 	position: relative;
+
+	order: 2;
+	@media screen and (min-width: $desktop-breakpoint) {
+		grid-column: span 2;
+	}
+
 }
 
 .title {

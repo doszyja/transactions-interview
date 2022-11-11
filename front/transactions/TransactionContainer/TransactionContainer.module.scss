@@ -8,17 +8,29 @@
 
 	max-width: 1000px;
 
-	padding: 0.3rem;
 	margin: 1.5rem auto;
 	gap: 0.3rem;
 
-	grid-template-columns: 1fr 1fr;
+	padding: 0 1rem;
+	grid-template-columns: 1fr;
 	grid-template-rows: max-content 1fr;
+
+	@media screen and (min-width: $desktop-breakpoint) {
+		padding: 0.3rem;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 .options {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 1.75rem 1rem;
+	order: 1;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 1fr;
+
+	justify-content: space-around;
+
+	@media screen and (min-width: $desktop-breakpoint) {
+		padding: 1.75rem 1rem;
+		order: 0;
+	}
 }
