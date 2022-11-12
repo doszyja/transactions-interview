@@ -1,8 +1,8 @@
 
 ## Introduction
 
-Acordingly to requirements application uses React and Typescript. Additionaly Nextjs added.
-Not much time to do everything as tidy as want (1 day). However all excercise steps complete.
+According to the requirements, application uses React and Typescript.
+Additionally, nextjs added. Not much time to do everything as tidy as want (1 day). However, all exercise steps complete.
 
 // Dominik Szyja
 ## App description
